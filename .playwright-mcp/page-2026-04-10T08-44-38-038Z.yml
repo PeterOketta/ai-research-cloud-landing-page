@@ -1,0 +1,211 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e9]:
+        - link "pel + sti 29" [ref=e14] [cursor=pointer]:
+          - /url: https://pathogeneconomylabs.ug/
+          - img "pel + sti 29" [ref=e15]
+        - navigation "Primary Site Navigation" [ref=e21]:
+          - list [ref=e23]:
+            - listitem [ref=e24]:
+              - link "Home" [ref=e25] [cursor=pointer]:
+                - /url: https://pathogeneconomylabs.ug/
+            - listitem [ref=e26]:
+              - link "Our Projects Menu Toggle" [ref=e27] [cursor=pointer]:
+                - /url: https://pathogeneconomylabs.ug/projects/
+                - text: Our Projects
+                - application "Menu Toggle" [ref=e28]:
+                  - img [ref=e30]
+            - listitem [ref=e32]:
+              - link "News & Events" [ref=e33] [cursor=pointer]:
+                - /url: https://pathogeneconomylabs.ug/news-events/
+        - generic [ref=e34]:
+          - button "Contact Us" [ref=e38] [cursor=pointer]:
+            - generic [ref=e39]: Contact Us
+          - generic [ref=e42]:
+            - link "Linkedin" [ref=e43] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/makerereai4h/?viewAsMember=true
+              - img [ref=e45]
+            - link "Twitter / X" [ref=e47] [cursor=pointer]:
+              - /url: https://x.com/makAI_launchpad
+              - img [ref=e49]
+    - generic [ref=e53]:
+      - generic [ref=e55]:
+        - heading "We are Empowering AI-Driven innovation to transform healthcare" [level=1] [ref=e57]
+        - generic [ref=e58]:
+          - paragraph [ref=e60]: In a rapidly evolving world, Artificial Intelligence (AI) has emerged as a driving force of the Fourth Industrial Revolution (4IR), especially for developing countries like Uganda. Recognizing the potential of AI to accelerate healthcare innovation, this project was initiated by Makerere University in partnership with clinical, governmental, and research institutions to tackle pressing health challenges.
+          - link "Learn More" [ref=e62] [cursor=pointer]:
+            - /url: https://test.pathogeneconomylabs.ug/projects/
+            - generic [ref=e63]:
+              - img [ref=e65]
+              - generic [ref=e69]: Learn More
+      - generic [ref=e71]:
+        - heading "Implemented by" [level=2] [ref=e73]
+        - img "logo4web 29" [ref=e75]
+        - generic [ref=e76]:
+          - heading "Funded by" [level=2] [ref=e78]
+          - img "logo (1)" [ref=e80]
+      - generic [ref=e82]:
+        - generic [ref=e84]:
+          - img [ref=e87]
+          - generic [ref=e90]: Where We’re Headed
+        - heading "Our Strategic Direction" [level=2] [ref=e92]
+        - generic [ref=e93]:
+          - generic [ref=e95]:
+            - img [ref=e98]
+            - generic [ref=e108]:
+              - heading "Our Mission" [level=4] [ref=e109]
+              - paragraph [ref=e110]: To pioneer a national AI-driven healthcare platform that enhances disease screening, enables healthcare data sovereignty, and drives AI research and innovation. Through collaborations across academia, healthcare, and government, we aim to accelerate the development and adoption of AI solutions, ensuring Uganda’s leadership in the Fourth Industrial Revolution (4IR) for health.
+          - generic [ref=e112]:
+            - img [ref=e115]
+            - generic [ref=e118]:
+              - heading "Our Vision" [level=4] [ref=e119]
+              - paragraph [ref=e120]: To transform healthcare in Uganda through the power of Artificial Intelligence, enabling accessible, early, and accurate disease screening while fostering an innovation-driven AI ecosystem for long-term health and economic impact.
+        - generic [ref=e122]:
+          - generic [ref=e123]:
+            - img [ref=e127]
+            - heading "Our Goals" [level=2] [ref=e130]
+          - generic [ref=e131]:
+            - paragraph [ref=e134]: Develop an Integrated AI Disease Screening Platform Focused on diseases with high public health impact—such as COVID-19, tuberculosis, cervical, and breast cancers—our AI platform utilizes cutting-edge models to improve screening accuracy and accessibility, especially in remote areas. Collaborating with partners like Mulago Hospital and the Uganda Cancer Institute, we develop AI models tailored to meet Uganda’s unique healthcare needs, enhancing diagnostic capabilities and patient outcomes.
+            - paragraph [ref=e137]:
+              - text: AI in Healthcare Research & Innovation Hub
+              - text: We are establishing an AI in Healthcare Research and Innovation Hub to serve as a National Centre for mentorship, technical support, and infrastructure, promoting AI-driven health research and commercialization. The hub will offer a collaborative environment where AI talent can thrive, fostering innovations that address real-world healthcare challenges and build a foundation for long-term AI expertise in Uganda.
+            - paragraph [ref=e140]:
+              - text: Commercializing AI-Driven Health Innovations
+              - text: A core goal of our project is to walk at least three AI-powered healthcare solutions through the full commercialization process, transforming them from research prototypes into sustainable businesses. By supporting product refinement, market readiness, and business development, we aim to establish a thriving ecosystem for AI-driven healthcare solutions that can contribute to Uganda’s economy while delivering accessible, impactful health interventions.
+      - generic [ref=e142]:
+        - generic [ref=e144]:
+          - img [ref=e147]
+          - generic [ref=e150]: Pathogrn Economy Labs Projects
+        - heading "On-going Projects" [level=2] [ref=e152]
+        - generic [ref=e153]:
+          - generic [ref=e154]:
+            - generic [ref=e156]:
+              - img [ref=e159]
+              - generic [ref=e161]:
+                - heading "AI Innovation Grant" [level=3] [ref=e162]
+                - paragraph [ref=e163]: An initiative focused on advancing AI-driven health innovations in Uganda
+            - generic [ref=e164]:
+              - paragraph [ref=e168]: ONCIMS
+              - paragraph [ref=e172]: Phronesis
+              - paragraph [ref=e176]: Feyti
+            - link "Learn More" [ref=e178] [cursor=pointer]:
+              - /url: https://test.pathogeneconomylabs.ug/projects/
+              - generic [ref=e179]:
+                - img [ref=e181]
+                - generic [ref=e185]: Learn More
+          - generic [ref=e186]:
+            - generic [ref=e188]:
+              - img [ref=e191]
+              - generic [ref=e193]:
+                - heading "AI Innovation Academy" [level=3] [ref=e194]
+                - paragraph [ref=e195]: An Artificial Intelligence & Machine Learning bootcamp offering AI/ML practical skills training, followed by business incubation mentorship.
+            - link "Learn More" [ref=e197] [cursor=pointer]:
+              - /url: https://pathogeneconomylabs.ug/ai-innovation-academy/
+              - generic [ref=e198]:
+                - img [ref=e200]
+                - generic [ref=e204]: Learn More
+          - generic [ref=e205]:
+            - generic [ref=e207]:
+              - img [ref=e210]
+              - generic [ref=e216]:
+                - heading "AI Screening Tools" [level=3] [ref=e217]
+                - paragraph [ref=e218]: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            - generic [ref=e219]:
+              - generic [ref=e221]:
+                - img [ref=e224]
+                - paragraph [ref=e227]: Cervisight
+              - generic [ref=e229]:
+                - link [ref=e231] [cursor=pointer]:
+                  - /url: https://pathogeneconomylabs.ug/ventrascan/
+                  - img [ref=e232]
+                - paragraph [ref=e235]: VentraScan
+      - generic [ref=e237]:
+        - generic [ref=e239]:
+          - img [ref=e242]
+          - generic [ref=e245]: What are we up to?
+        - heading "News & Events" [level=2] [ref=e247]
+        - generic [ref=e251]:
+          - generic [ref=e254]:
+            - link "ai demo day" [ref=e256] [cursor=pointer]:
+              - /url: https://pathogeneconomylabs.ug/highlights-from-the-ai-innovation-demo-day-2026/
+              - img "ai demo day" [ref=e257]
+            - heading "Highlights from the AI Innovation Demo Day 2026" [level=3] [ref=e259]:
+              - link "Highlights from the AI Innovation Demo Day 2026" [ref=e260] [cursor=pointer]:
+                - /url: https://pathogeneconomylabs.ug/highlights-from-the-ai-innovation-demo-day-2026/
+            - generic [ref=e262]:
+              - generic [ref=e263]: 
+              - link "March 16, 2026" [ref=e264] [cursor=pointer]:
+                - /url: https://pathogeneconomylabs.ug/2026/03/16/
+            - link "Read More" [ref=e268] [cursor=pointer]:
+              - /url: https://pathogeneconomylabs.ug/highlights-from-the-ai-innovation-demo-day-2026/
+          - generic [ref=e271]:
+            - link "post 3 768x382 (1) 02" [ref=e273] [cursor=pointer]:
+              - /url: https://pathogeneconomylabs.ug/ai-tb-screening-tool-takes-a-major-step-forward-at-mildmay-alpha-testing-session/
+              - img "post 3 768x382 (1) 02" [ref=e274]
+            - heading "AI TB-Screening Tool Takes a Major Step Forward at Mildmay Alpha Testing Session" [level=3] [ref=e276]:
+              - link "AI TB-Screening Tool Takes a Major Step Forward at Mildmay Alpha Testing Session" [ref=e277] [cursor=pointer]:
+                - /url: https://pathogeneconomylabs.ug/ai-tb-screening-tool-takes-a-major-step-forward-at-mildmay-alpha-testing-session/
+            - generic [ref=e279]:
+              - generic [ref=e280]: 
+              - link "December 4, 2025" [ref=e281] [cursor=pointer]:
+                - /url: https://pathogeneconomylabs.ug/2025/12/04/
+            - link "Read More" [ref=e285] [cursor=pointer]:
+              - /url: https://pathogeneconomylabs.ug/ai-tb-screening-tool-takes-a-major-step-forward-at-mildmay-alpha-testing-session/
+          - generic [ref=e288]:
+            - link "mbra post" [ref=e290] [cursor=pointer]:
+              - /url: https://pathogeneconomylabs.ug/pel-introduces-the-cervical-cancer-screening-platform-to-mbarara-health-workers/
+              - img "mbra post" [ref=e291]
+            - 'heading "Empowering Through AI: PEL Introduces the Cervical Cancer Screening tool to Mbarara Health Workers" [level=3] [ref=e293]':
+              - 'link "Empowering Through AI: PEL Introduces the Cervical Cancer Screening tool to Mbarara Health Workers" [ref=e294] [cursor=pointer]':
+                - /url: https://pathogeneconomylabs.ug/pel-introduces-the-cervical-cancer-screening-platform-to-mbarara-health-workers/
+            - generic [ref=e296]:
+              - generic [ref=e297]: 
+              - link "November 7, 2025" [ref=e298] [cursor=pointer]:
+                - /url: https://pathogeneconomylabs.ug/2025/11/07/
+            - link "Read More" [ref=e302] [cursor=pointer]:
+              - /url: https://pathogeneconomylabs.ug/pel-introduces-the-cervical-cancer-screening-platform-to-mbarara-health-workers/
+      - generic [ref=e304]:
+        - generic [ref=e305]:
+          - heading "05+" [level=2] [ref=e309]
+          - generic [ref=e312]:
+            - heading "Start - Ups Incubated" [level=3] [ref=e313]
+            - paragraph [ref=e314]: We have helped start-ups build and commercialise
+        - generic [ref=e315]:
+          - heading "50+" [level=2] [ref=e319]
+          - generic [ref=e322]:
+            - heading "MVPs Developed" [level=3] [ref=e323]
+            - paragraph [ref=e324]: Helped develop Minimum Viable Products (MVPs) through a structured one-year incubation process.
+        - generic [ref=e325]:
+          - heading "98%" [level=2] [ref=e329]
+          - generic [ref=e332]:
+            - heading "Financial advantage" [level=3] [ref=e333]
+            - paragraph [ref=e334]: We are helping the government save over UGX 20B
+      - generic [ref=e337]:
+        - generic [ref=e339]:
+          - img [ref=e342]
+          - generic [ref=e345]: ARE YOU LOOKING TO COLLABORATE
+        - heading "Join Us on Our Mission" [level=2] [ref=e347]
+        - paragraph [ref=e349]: As we advance Uganda’s healthcare system into a new era, we invite healthcare professionals, researchers, policymakers, and innovators to collaborate with us. Together, we can unlock the potential of AI to transform healthcare for Ugandans and set an example for AI-driven public health solutions across Africa.
+        - link "Reach Out Today" [ref=e351] [cursor=pointer]:
+          - /url: mailto:katraxuk@gmail.com
+          - generic [ref=e352]:
+            - img [ref=e354]
+            - generic [ref=e358]: Reach Out Today
+    - contentinfo [ref=e359]:
+      - 'navigation "Site Navigation: Main Menu" [ref=e366]':
+        - list [ref=e368]:
+          - listitem [ref=e369]:
+            - link "Home" [ref=e370] [cursor=pointer]:
+              - /url: https://pathogeneconomylabs.ug/
+          - listitem [ref=e371]:
+            - link "Our Projects Menu Toggle" [ref=e372] [cursor=pointer]:
+              - /url: https://pathogeneconomylabs.ug/projects/
+              - text: Our Projects
+              - application "Menu Toggle"
+          - listitem [ref=e373]:
+            - link "News & Events" [ref=e374] [cursor=pointer]:
+              - /url: https://pathogeneconomylabs.ug/news-events/
+  - generic [ref=e375]: desktop

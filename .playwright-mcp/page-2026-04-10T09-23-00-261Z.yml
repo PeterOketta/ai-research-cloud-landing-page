@@ -1,0 +1,196 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - navigation [ref=e5]:
+      - link "Emergent AI" [ref=e6] [cursor=pointer]:
+        - /url: "#"
+        - img "Emergent AI" [ref=e7]
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - link "Products" [ref=e10] [cursor=pointer]:
+            - /url: "#products"
+        - listitem [ref=e11]:
+          - link "MDR Web" [ref=e12] [cursor=pointer]:
+            - /url: "#mdr-web"
+        - listitem [ref=e13]:
+          - link "MDR Mobile" [ref=e14] [cursor=pointer]:
+            - /url: "#mdr-mobile"
+        - listitem [ref=e15]:
+          - link "Data Platform" [ref=e16] [cursor=pointer]:
+            - /url: "#data-platform"
+      - link "Request Demo" [ref=e18] [cursor=pointer]:
+        - /url: "#contact"
+  - main [ref=e19]:
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - generic [ref=e22]:
+          - paragraph [ref=e23]: MDR-TB Clinical Platform
+          - heading "Predicting TB Outcomes. Protecting Communities." [level=1] [ref=e24]
+          - paragraph [ref=e25]: AI-powered clinical decision tools for MDR-TB patient management and household contact risk stratification.
+          - generic [ref=e26]:
+            - link "Explore Products" [ref=e27] [cursor=pointer]:
+              - /url: "#products"
+            - link "See How It Works" [ref=e28] [cursor=pointer]:
+              - /url: "#workflow"
+        - img "MDR-TB Treatment Response Prediction interface" [ref=e36]
+      - img [ref=e38]
+    - generic [ref=e41]:
+      - heading "Our Products" [level=2] [ref=e43]
+      - generic [ref=e44]:
+        - generic [ref=e45] [cursor=pointer]:
+          - img [ref=e47]
+          - paragraph [ref=e50]: Web Application
+          - heading "MDR Web" [level=3] [ref=e51]
+          - paragraph [ref=e52]: A comprehensive clinical platform for managing MDR-TB patients across facilities. Clinicians capture patient history, order investigations, and receive AI-powered treatment response predictions.
+          - link "Learn more" [ref=e53]:
+            - /url: "#mdr-web"
+        - generic [ref=e54] [cursor=pointer]:
+          - img [ref=e56]
+          - paragraph [ref=e58]: Mobile Application
+          - heading "MDR Mobile" [level=3] [ref=e59]
+          - paragraph [ref=e60]: The full MDR-TB clinical workflow on Android. Clinicians access patient data, run AI analyses, and review treatment predictions from anywhere.
+          - link "Learn more" [ref=e61]:
+            - /url: "#mdr-mobile"
+        - generic [ref=e62] [cursor=pointer]:
+          - img [ref=e64]
+          - paragraph [ref=e68]: Data Pipeline
+          - heading "Data Platform" [level=3] [ref=e69]
+          - paragraph [ref=e70]: An imaging pipeline for uploading and curating medical images. Images are automatically de-identified before storage, then reviewed and labelled for AI model training.
+          - link "Learn more" [ref=e71]:
+            - /url: "#data-platform"
+    - generic [ref=e73]:
+      - generic [ref=e74]:
+        - paragraph [ref=e75]: Clinical Workflow
+        - heading "How It Works" [level=2] [ref=e76]
+        - paragraph [ref=e77]: A structured clinical workflow connecting every step, from patient registration to AI-informed treatment decisions.
+      - generic [ref=e80]:
+        - generic [ref=e81]:
+          - generic [ref=e83]: "1"
+          - img [ref=e85]
+          - paragraph [ref=e89]: Patient Registration
+          - paragraph [ref=e90]: A new patient is registered into the system with demographic and clinical details.
+        - generic [ref=e91]:
+          - generic [ref=e93]: "2"
+          - img [ref=e95]
+          - paragraph [ref=e99]: Assigned to Doctor
+          - paragraph [ref=e100]: The patient is assigned to a treating physician who manages their case.
+        - generic [ref=e101]:
+          - generic [ref=e103]: "3"
+          - img [ref=e105]
+          - paragraph [ref=e108]: Medical History and Symptoms
+          - paragraph [ref=e109]: The doctor captures symptoms, clinical history, and baseline measurements.
+        - generic [ref=e110]:
+          - generic [ref=e112]: "4"
+          - img [ref=e114]
+          - paragraph [ref=e117]: AI Risk Prediction
+          - paragraph [ref=e118]: The AI model runs and returns a treatment response prediction with clinical guidance.
+        - generic [ref=e119]:
+          - generic [ref=e121]: "5"
+          - img [ref=e123]
+          - paragraph [ref=e126]: Results Reviewed
+          - paragraph [ref=e127]: The doctor reviews all results and updates the treatment plan accordingly.
+    - generic [ref=e129]:
+      - generic [ref=e130]:
+        - paragraph [ref=e131]: MDR Web
+        - heading "Clinical Decision Support for MDR-TB." [level=2] [ref=e132]
+      - generic [ref=e133]:
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - paragraph [ref=e136]: Patient Management
+            - heading "End-to-End Patient Workflows" [level=3] [ref=e137]
+            - paragraph [ref=e138]: Register patients, assign them to doctors, and track their journey through the clinical system. Every clinician has a tailored interface designed for their specific workflow.
+            - list [ref=e139]:
+              - listitem [ref=e140]: Register new patients with demographic and clinical details
+              - listitem [ref=e142]: Assign patients to a treating doctor and manage their case
+              - listitem [ref=e144]: Track patient status and history across the full treatment period
+          - img "Patient list showing assigned patients and their details" [ref=e153]
+        - generic [ref=e154]:
+          - generic [ref=e155]:
+            - paragraph [ref=e156]: AI Predictions
+            - heading "AI-Powered Treatment Response Prediction" [level=3] [ref=e157]
+            - paragraph [ref=e158]: At baseline and follow-up, the ML model analyses clinical history and symptoms to predict treatment outcomes, giving clinicians the insight to act early.
+            - list [ref=e159]:
+              - listitem [ref=e160]: Predictions run at baseline, two months, and five months
+              - listitem [ref=e162]: Identifies patients unlikely to respond early enough to intervene
+              - listitem [ref=e164]: Clinical guidance tailored to each patient's data
+          - img "MDR-TB Treatment Response Prediction screen" [ref=e173]
+    - generic [ref=e176]:
+      - generic [ref=e177]:
+        - paragraph [ref=e178]: MDR Mobile
+        - heading "MDR Web on Android." [level=2] [ref=e179]
+        - paragraph [ref=e180]: The complete MDR Web clinical workflow on a mobile device. Clinicians can manage patients, enter clinical data, and receive AI treatment response predictions from anywhere.
+        - list [ref=e181]:
+          - listitem [ref=e182]: Enter patient symptoms, history, and baseline measurements
+          - listitem [ref=e184]: Run the AI model and view treatment response predictions
+          - listitem [ref=e186]: Add clinical notes and flag cases for follow-up
+      - generic [ref=e188]:
+        - generic [ref=e189]:
+          - img "MDR-TB Analysis input screen" [ref=e192]
+          - paragraph [ref=e193]: Analysis Input
+        - generic [ref=e194]:
+          - img "MDR-TB Analysis result showing Likely Responding" [ref=e197]
+          - paragraph [ref=e198]: AI Result
+    - generic [ref=e200]:
+      - generic [ref=e201]:
+        - paragraph [ref=e202]: Data Management Platform
+        - heading "Imaging Pipeline for AI Training." [level=2] [ref=e203]
+      - generic [ref=e204]:
+        - generic [ref=e205]:
+          - generic [ref=e206]:
+            - paragraph [ref=e207]: Upload
+            - heading "Radiographers Upload Images" [level=3] [ref=e208]
+            - paragraph [ref=e209]: The radiographer logs in and uploads medical images directly into the platform. Images are immediately queued for processing.
+            - list [ref=e210]:
+              - listitem [ref=e211]: Supports standard medical image formats
+              - listitem [ref=e213]: Batch upload for multiple images
+              - listitem [ref=e215]: Immediate queue entry on upload
+          - img "DICOM image upload interface" [ref=e224]
+        - generic [ref=e225]:
+          - generic [ref=e226]:
+            - paragraph [ref=e227]: De-identification
+            - heading "Automatic Patient De-identification" [level=3] [ref=e228]
+            - paragraph [ref=e229]: Before any image is stored, the system automatically strips all patient identifiers. No manual steps are needed. The process runs instantly on every upload.
+            - list [ref=e230]:
+              - listitem [ref=e231]: All patient identifiers removed automatically
+              - listitem [ref=e233]: No manual intervention required
+              - listitem [ref=e235]: Compliant with data privacy standards
+          - img "Image queue dashboard showing de-identified images" [ref=e244]
+        - generic [ref=e245]:
+          - generic [ref=e246]:
+            - paragraph [ref=e247]: Review
+            - heading "Radiologists Label and Approve" [level=3] [ref=e248]
+            - paragraph [ref=e249]: A radiologist opens each image in the medical viewer, checks quality, attaches labels, and either approves the image for the training dataset or rejects it for correction.
+            - list [ref=e250]:
+              - listitem [ref=e251]: Label attachment per image
+              - listitem [ref=e253]: Approve or reject workflow
+              - listitem [ref=e255]: Rejected images returned to radiographer for correction
+          - img "Medical image viewer showing chest X-ray with annotation tools" [ref=e264]
+    - generic [ref=e266]:
+      - paragraph [ref=e267]: Get in Touch
+      - heading "Ready to improve TB outcomes with AI?" [level=2] [ref=e268]
+      - paragraph [ref=e269]: Contact us to request a demo or learn more.
+      - link "Contact Us" [ref=e270] [cursor=pointer]:
+        - /url: mailto:info@emergentai.org
+  - contentinfo [ref=e271]:
+    - generic [ref=e272]:
+      - generic [ref=e273]:
+        - generic [ref=e274]:
+          - img "Emergent AI" [ref=e275]
+          - paragraph [ref=e276]: © 2026 Emergent AI
+        - navigation "Footer navigation" [ref=e277]:
+          - list [ref=e278]:
+            - listitem [ref=e279]:
+              - link "Products" [ref=e280] [cursor=pointer]:
+                - /url: "#products"
+            - listitem [ref=e281]:
+              - link "MDR Web" [ref=e282] [cursor=pointer]:
+                - /url: "#mdr-web"
+            - listitem [ref=e283]:
+              - link "MDR Mobile" [ref=e284] [cursor=pointer]:
+                - /url: "#mdr-mobile"
+            - listitem [ref=e285]:
+              - link "Data Platform" [ref=e286] [cursor=pointer]:
+                - /url: "#data-platform"
+            - listitem [ref=e287]:
+              - link "Contact" [ref=e288] [cursor=pointer]:
+                - /url: "#contact"
+      - paragraph [ref=e290]: AI-powered clinical decision support tools for MDR-TB management.

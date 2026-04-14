@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────────────────────────
+   Design Tokens — Blue / White palette (air.ug-inspired)
+───────────────────────────────────────────────────────────────── */
+@theme {
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body:    "Figtree", ui-sans-serif, system-ui, sans-serif;
+
+  /* Primary blue family (deeper royal) */
+  --color-brand:       #0B3D91;
+  --color-brand-dark:  #062868;
+  --color-brand-mid:   #1453C9;
+  --color-brand-soft:  #DCE6F7;
+  --color-brand-tint:  #EEF3FB;
+  --color-brand-deep:  #041F54;
+
+  /* Neutrals */
+  --color-ink:         #0F172A;
+  --color-ink-soft:    #1E293B;
+  --color-ink-dim:     #475569;
+  --color-ink-faint:   #94A3B8;
+
+  /* Surfaces */
+  --color-paper:       #FFFFFF;
+  --color-paper-off:   #F8FAFC;
+  --color-paper-line:  #E2E8F0;
+
+  /* Supporting */
+  --color-accent:      #0EA5E9;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+  color: var(--color-ink);
+}
+
+/* Subtle dot pattern */
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(11,61,145,0.14) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.dot-grid-light {
+  background-image: radial-gradient(circle, rgba(255,255,255,0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Deep blue gradient wash */
+.blue-wash {
+  background:
+    radial-gradient(ellipse 70% 50% at 10% 10%, rgba(11,61,145,0.18), transparent 55%),
+    radial-gradient(ellipse 60% 50% at 100% 100%, rgba(4,31,84,0.12), transparent 55%),
+    #EEF3FB;
+}
+
+.deep-blue {
+  background:
+    radial-gradient(ellipse at 20% 20%, rgba(20,83,201,0.45), transparent 60%),
+    radial-gradient(ellipse at 80% 80%, rgba(6,40,104,0.55), transparent 60%),
+    #041F54;
+}
+
+/* Link underline slide */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: -4px;
+  height: 2px;
+  background: var(--color-brand);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+.nav-link:hover::after { transform: scaleX(1); }
+
+/* Outline button (air.ug style) */
+.btn-outline {
+  border: 2px solid var(--color-brand);
+  color: var(--color-brand);
+  background: transparent;
+  transition: all 0.2s ease;
+}
+.btn-outline:hover {
+  background: var(--color-brand);
+  color: #ffffff;
+}
+
+.btn-solid {
+  background: var(--color-brand);
+  color: #ffffff;
+  border: 2px solid var(--color-brand);
+  transition: all 0.2s ease;
+}
+.btn-solid:hover {
+  background: var(--color-brand-dark);
+  border-color: var(--color-brand-dark);
+}
+
+/* Feature card */
+.feature-card {
+  border: 1px solid rgba(11,61,145,0.12);
+  background: #ffffff;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--color-brand);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+.feature-card:hover {
+  border-color: var(--color-brand);
+  box-shadow: 0 24px 48px -20px rgba(11,61,145,0.3);
+  transform: translateY(-4px);
+}
+.feature-card:hover::before { transform: scaleX(1); }
+
+/* Dataset card */
+.ds-card {
+  background: #ffffff;
+  border: 1px solid rgba(11,61,145,0.12);
+  transition: all 0.3s ease;
+  position: relative;
+}
+.ds-card:hover {
+  border-color: var(--color-brand);
+  box-shadow: 0 20px 40px -18px rgba(11,61,145,0.28);
+  transform: translateY(-3px);
+}
+.ds-card .ds-arrow {
+  transition: transform 0.25s ease;
+}
+.ds-card:hover .ds-arrow {
+  transform: translate(4px, -4px);
+  color: var(--color-brand);
+}
+
+/* License badge */
+.license-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.3rem 0.6rem;
+  background: var(--color-brand-tint);
+  color: var(--color-brand);
+  letter-spacing: 0.04em;
+}
+
+/* Hero image frame */
+.hero-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+}
+.hero-frame::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0,103,255,0.15) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* Eyebrow label */
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-brand);
+  padding-left: 1.25rem;
+  position: relative;
+}
+.eyebrow::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0.75rem;
+  height: 2px;
+  background: var(--color-brand);
+}
+
+/* Dataset table row hover */
+.table-row {
+  border-bottom: 1px solid var(--color-paper-line);
+  transition: background 0.15s ease;
+}
+.table-row:hover { background: var(--color-brand-tint); }
+
+/* Marquee keyframes for partner logos (disabled by default, here if needed) */
+@keyframes slide-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

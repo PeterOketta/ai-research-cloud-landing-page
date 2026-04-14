@@ -1,0 +1,84 @@
+name: Deploy Staging
+
+on:
+  push:
+    branches:
+      - staging
+      - main
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and Push Docker Image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          no-cache: true
+          build-args: |
+            VITE_REQUEST_ACCESS_URL=${{ secrets.VITE_REQUEST_ACCESS_URL }}
+          tags: |
+            ${{ secrets.DOCKERHUB_USERNAME }}/narc-frontend:staging-latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/narc-frontend:${{ github.sha }}
+
+  deploy-staging:
+    runs-on: ubuntu-latest
+    needs: build-and-push
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Copy Compose file to VM
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.VM_IP_ADDRESS }}
+          username: ${{ secrets.VM_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "docker-compose.yml"
+          target: "~/narc-frontend"
+
+      - name: SSH and Deploy using Compose
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{ secrets.VM_IP_ADDRESS }}
+          username: ${{ secrets.VM_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd ~/narc-frontend
+            cat > .env <<'EOF'
+            FRONTEND_IMAGE=${{ secrets.DOCKERHUB_USERNAME }}/narc-frontend:staging-latest
+            VIRTUAL_HOST=${{ secrets.VIRTUAL_HOST }}
+            VITE_REQUEST_ACCESS_URL=${{ secrets.VITE_REQUEST_ACCESS_URL }}
+            EOF
+            if docker compose version >/dev/null 2>&1; then
+              docker compose pull
+              docker compose up -d --remove-orphans
+            elif command -v docker-compose >/dev/null 2>&1; then
+              docker-compose pull
+              docker-compose up -d --remove-orphans
+            else
+              echo "Docker Compose is not installed (neither 'docker compose' nor 'docker-compose')."
+              exit 1
+            fi
+            sleep 10
+            if docker restart nginx >/dev/null 2>&1; then
+              echo "Restarted nginx proxy container: nginx"
+            elif docker restart nginx-proxy >/dev/null 2>&1; then
+              echo "Restarted nginx proxy container: nginx-proxy"
+            else
+              echo "Warning: could not restart proxy container (tried nginx and nginx-proxy)."
+            fi
