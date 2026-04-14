@@ -273,12 +273,6 @@ export default function App() {
                 className="w-full h-full object-cover"
               />
 
-              {/* Corner tag — top left */}
-              <div className="absolute top-0 left-0 bg-brand text-white px-4 py-2 font-display font-semibold text-[11px] uppercase tracking-[0.2em] flex items-center gap-2 shadow-lg">
-                <span className="w-1.5 h-1.5 bg-white animate-pulse" />
-                Research in Progress
-              </div>
-
               {/* Gradient overlay at bottom for depth */}
               <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-brand-deep/40 to-transparent pointer-events-none" />
             </div>
@@ -486,10 +480,6 @@ export default function App() {
                   National AI Research Cloud
                 </div>
               </div>
-              <p className="text-white/70 leading-[1.7] text-[15px] max-w-md">
-                Get in touch with us to collaborate on machine learning based projects.
-              </p>
-
               <div>
                 <h4 className="font-display font-semibold text-white text-xs uppercase tracking-[0.18em] mb-3">
                   Follow Us
