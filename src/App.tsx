@@ -14,6 +14,7 @@ const makAILogo       = new URL('./images/Mak-AI neutral.png',      import.meta.
 const renuLogo        = new URL('./images/RENU_logo.png',           import.meta.url).href;
 
 const CATALOG_URL = 'https://staging-makerere-university-ai4d-hub.marconilab.org/';
+const REQUEST_ACCESS_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSeE4L_tluR3jPCw4naSNX-xVVtZSi2vlZFKz0BAG1B-QNiK6A/viewform?usp=dialog';
 
 const NAV_LINKS = [
   { label: 'Infrastructure', href: '#infrastructure' },
@@ -153,7 +154,7 @@ export default function App() {
             </nav>
 
             <div className="hidden lg:flex items-center gap-4">
-              <a href="#about"
+              <a href={REQUEST_ACCESS_URL} target="_blank" rel="noopener noreferrer"
                 className="btn-solid px-6 py-2.5 font-display font-semibold text-sm inline-flex items-center gap-2"
               >
                 Request for Access
@@ -180,7 +181,8 @@ export default function App() {
                   className="block font-display font-medium text-ink-soft hover:text-brand"
                 >{link.label}</a>
               ))}
-              <a href="#about" onClick={() => setMenuOpen(false)}
+              <a href={REQUEST_ACCESS_URL} target="_blank" rel="noopener noreferrer"
+                onClick={() => setMenuOpen(false)}
                 className="btn-solid w-full block text-center py-3 font-display font-semibold text-sm"
               >
                 Request for Access
@@ -231,7 +233,7 @@ export default function App() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="flex flex-wrap gap-4 pt-9 justify-center"
           >
-            <a href="#about"
+            <a href={REQUEST_ACCESS_URL} target="_blank" rel="noopener noreferrer"
               className="btn-solid px-7 py-3.5 font-display font-semibold text-[15px] inline-flex items-center gap-2"
             >
               Request for Access
@@ -463,7 +465,7 @@ export default function App() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex flex-wrap gap-4 justify-center"
           >
-            <a href="mailto:andrew.katumba@mak.ac.ug"
+            <a href={REQUEST_ACCESS_URL} target="_blank" rel="noopener noreferrer"
               className="bg-white text-brand px-8 py-4 font-display font-semibold inline-flex items-center gap-2 hover:bg-brand-soft transition-colors"
             >
               Request for Access <ArrowRight className="w-4 h-4" />
